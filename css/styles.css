@@ -1,0 +1,232 @@
+
+/* Typography */ 
+
+html {
+    font-family: 'Fira Sans', sans-serif; 
+    background-image: linear-gradient(black, white, black);
+    color: white;
+}
+
+main>section,footer
+{
+    outline: solid rgb(29, 28, 28);
+}
+
+/* Header*/
+
+header
+{
+    background-color: rgb(66, 65, 65);
+    text-align: center;
+    height: 30vh;
+    outline: solid black;
+}
+
+nav
+{
+    display:inline-block;
+    outline: 0.2em double black;
+    padding: 1em;
+}
+
+nav:hover
+{
+    background-color: rgb(119, 116, 116);
+    outline: 0.2em double rgb(87, 85, 85);
+    transition: 0.3s;
+}
+
+nav>a
+{
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+    background-color: gray;
+    outline: 0.2em double rgb(236, 227, 227);
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+nav>a:hover
+{
+    background-color: black;
+    color: white;
+    transition: 0.7s;
+    font-weight: bolder;
+}
+
+
+
+/* Layout */ 
+
+/*Section 1*/
+
+.flex
+{
+    background-color: rgb(45, 138, 219);
+    padding: 5em;
+    color: black;
+}
+
+div>img
+{
+    background-color: black;
+    width: 250px;
+    height: 250px;
+    padding: 2em;
+}
+
+div>img:hover
+{
+    background-color: rgb(184, 179, 179);
+    width: 280px;
+    height: 280px;
+    padding: 1em;
+    transition: 0.5s;
+}
+
+section:nth-of-type(1)>.flex>div:nth-of-type(2)
+{
+    background-color: teal;
+    padding: 1em;
+}
+
+section:nth-of-type(1)>.flex>div:nth-of-type(2):hover
+{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+.flex>div>p>a,.flex>div>a
+{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 1000;
+}
+
+h1, h2, h3 {
+    font-weight: 600; 
+}
+
+p {
+    font-weight: 300; 
+    line-height: 18px; 
+}
+
+.wrapper {
+    width: 80%; 
+    margin: 0 auto; 
+}
+
+.flex {
+    display:flex;
+    gap: 32px;  
+}
+
+#features > div {
+    flex: 1; 
+}
+
+img {
+    max-height: 300px; 
+    width: auto; 
+}
+
+
+
+/* Section 2*/
+
+#playlist>h2
+{
+    text-align: center;
+    font-size: 30px;
+}
+
+#playlist
+{
+    background-color: teal;
+    padding-bottom: 3em;
+    padding-top: 1em;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#playlist>table
+{
+    background-color: black;
+}
+
+#playlist>table>thead
+{
+    background-color: #333;
+    font-size: 24px;
+}
+
+#playlist>table:hover
+{
+    color: black;
+    background-color: rgb(83, 82, 80);
+    transition: 0.4s;
+}
+
+#features
+{
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+}
+
+#features>div
+{
+    background-image: linear-gradient(rgb(27, 75, 129),rgb(96, 162, 238));
+}
+
+#features>div>h3
+{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+#features>div>ul, #features>div>ol
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 1.5em;
+    
+}
+
+#features>div>ul>li, #features>div>ol>li
+{
+    list-style: none;
+    font-style: italic;
+}
+
+#features div>table
+{
+    padding-left: 2em;
+}
+
+#features div>table>tbody>tr>th
+{
+    font-style: italic;
+    padding-right: 1em;
+    text-align: left;
+}
+
+/*Footer*/
+
+footer
+{
+    background-color: white;
+    color: #333;
+    padding-top: 0.1em;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+}
